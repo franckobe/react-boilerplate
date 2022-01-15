@@ -1,23 +1,14 @@
 import './App.css';
+import Readme from "./components/readme/Readme";
+import ThemeSettings from "./components/commons/theme/ThemeSettings";
 
-function App() {
-  return (
-    <div>
+const App = () => {
 
-      <header>
-        <nav>
-          <ul>
-            <li>Coucou</li>
-          </ul>
-        </nav>
-      </header>
-      
-      <main>
+    ThemeSettings.initThemeListener();
 
-      </main>
-
-    </div>
-  );
+    return (
+        <Readme />
+    );
 }
 
 export default App;
