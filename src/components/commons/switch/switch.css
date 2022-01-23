@@ -35,3 +35,15 @@
 .switch label input:checked + span::before {
     left: calc(100% - 26px);
 }
+.switch label input + span svg {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: var(--accent-color-darker);
+}
+.switch label input:checked + span svg {
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: var(--accent-color-darker);
+}

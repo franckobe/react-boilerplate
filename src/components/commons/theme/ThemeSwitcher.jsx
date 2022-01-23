@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Switch from "../switch/Switch";
 import ThemeSettings from "./ThemeSettings";
+import {BsFillMoonFill} from "react-icons/bs";
+import {HiLightBulb} from "react-icons/hi";
 
 class ThemeSwitcher extends Component {
 
@@ -17,7 +19,14 @@ class ThemeSwitcher extends Component {
 
     render() {
         return (
-            <Switch id={ThemeSettings.SWITCHER_ID} checked={this.state.darkMode} onChange={this.onThemeChanged} text={'Dark mode'} />
+            <Switch
+                id={ThemeSettings.SWITCHER_ID}
+                checked={this.state.darkMode}
+                onChange={this.onThemeChanged}
+                //text={'Dark mode'}
+                checkedIcon={<BsFillMoonFill size={12} />}
+                uncheckedIcon={<HiLightBulb size={18} />}
+            />
         );
     }
 }
