@@ -1,0 +1,57 @@
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--button-font-size);
+    padding: var(--button-padding-v) var(--button-padding-h);
+    background-color: var(--accent-color);
+    transition: var(--link-transition);
+}
+button:hover, button:active, button:focus {
+    background-color: var(--accent-color-darker);
+}
+button.btn-icon-right {
+    flex-direction: row-reverse;
+}
+button.btn-icon-top {
+    flex-direction: column;
+}
+button.btn-icon-bottom {
+    flex-direction: column-reverse;
+}
+button:not(.btn-icon).btn-icon-right svg {
+    margin-left: var(--button-padding-h);
+}
+button:not(.btn-icon).btn-icon-left svg {
+    margin-right: var(--button-padding-h);
+}
+button:not(.btn-icon).btn-icon-top svg {
+    margin-bottom: var(--button-padding-v);
+}
+button:not(.btn-icon).btn-icon-bottom svg {
+    margin-top: var(--button-padding-v);
+}
+button.btn-rounded {
+    border-radius: var(--button-border-radius);
+}
+button.btn-icon {
+    padding: var(--button-icon-padding);
+}
+button.btn-circle {
+    border-radius: 100px;
+}
+button.btn-icon-circle {
+    border-radius: 50%;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 10px;
+}

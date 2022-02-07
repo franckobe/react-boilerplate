@@ -9,7 +9,7 @@ import {
     IconCircleButton,
     IconRoundedButton,
     RoundedButton
-} from "../commons/buttons/Buttons";
+} from "../commons/buttons";
 import {FaSearch} from "react-icons/fa";
 import IconPlacement from "../commons/enums";
 
@@ -35,6 +35,9 @@ class Readme extends React.Component {
                     <br/>
                     <p>Paragraphe : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid atque deserunt eius enim,
                         error eveniet facilis fugiat illo incidunt libero mollitia nisi nulla omnis placeat ratione
+                        reprehenderit ullam?</p>
+                    <p>Paragraphe : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid atque deserunt eius enim,
+                        error eveniet facilis <a href="#toto">fugiat illo incidunt</a> libero mollitia nisi nulla omnis placeat ratione
                         reprehenderit ullam?</p>
                     <br/>
 
